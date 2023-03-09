@@ -1,0 +1,64 @@
+/* 
+Sintaxis
+lenguaje de estilos, que complementa a HTML
+NO SE USA PARA EL CONTENIDO
+
+Selector
+nombre {
+    propiedad:valor;
+}
+
+.clase{}
+#id{}
+etiqueta{}
+
+*{}
+@media 
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+html{
+    font-family: 'Montserrat';
+}
+body{
+    padding:0;
+    margin: 0;
+}
+
+.header{
+    background-color: tomato;
+}
+.logo>h1{
+    /* font-weight: 400; */
+    font-size: 32px;
+    font-family: 'Monoton';
+    text-align: center;
+    /* margin-top:0; */
+}
+#mainContent{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+.news-image>img{
+    width: 100%;
+}
+.news-title>h2{
+    text-align: center;
+}
+.news{
+    border:2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}.news-text>p{
+    padding: 10px;
+}
+
+#footer{
+    padding: 20px;
+    background-color: rgb(76, 18, 3);
+    text-align: center;
+    color:white;}
