@@ -43,6 +43,10 @@ body{
     padding: 0.5em;
 }
 
+#img1{
+    filter:grayscale(1);
+}
+
 .news-image>img{
     width: 100%;
 }
@@ -56,6 +60,13 @@ body{
 }.news-text>p{
     padding: 10px;
 }
+
+
+/* pruebas */
+
+.madre{width: 60%;}
+.hijos{}
+.padre,.hijos{border:3px solid tomato; padding:10px;}
 
 #footer{
     padding: 20px;
