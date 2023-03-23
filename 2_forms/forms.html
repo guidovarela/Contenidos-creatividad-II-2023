@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualarios</title>
+
+    <!-- Metatags (description - keywords) -  mejora la indexacion del contenido en Google SEO -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    
+    <header id="header">
+        <h1>Formularios</h1>
+    </header>
+
+    <section id="form1">
+
+        <div class="title">
+            <h2>Escribinos para más información</h2>
+        </div>
+
+        <!-- <form action="mailto:tumail@gmail.com" method="post"> -->
+        <form action="respuesta.html">
+           
+            <div>
+                <label>
+                    <span>
+                        Nombre
+                    </span> 
+                    <input type="text" name="nombre" required>
+                </label>
+            </div>
+            
+            <div>
+                <!-- accesibilidad -->
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" required>
+                </label>
+            </div>
+
+            <div>
+                <p>Género</p>
+
+                <label>
+                    <input type="radio" name="genero" value="f" >
+                    <span>Femenino</span>
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="m" >
+                    <span>Masculino</span>
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="false" >
+                    <span>Prefiero no decirlo</span>
+                </label>
+            </div>
+
+            <div>
+                <label for="campoLocalidad">
+                    <span>
+                        Localidad
+                    </span>
+                    <select name="localidad" id="campoLocalidad">
+                        <option>Seleccione..</option>
+                        <option>Breslavia</option>
+                        <option>Buenos Aires</option>
+                        <option>Monte Grande</option>
+                        <option>Santiago de Chile</option>
+                        <option>Tegucigalpa</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label for="campoMensaje">
+                    <span>Mensaje</span>
+                </label>
+                <textarea name="mensaje" id="campoMensaje" required></textarea>
+                <label for=""></label>
+            </div>
+
+            <div>
+                <input type="submit" value="enviar info">
+            </div>
+
+                    
+
+            
+
+
+            <!-- nombre, email, genero, localidad, mensaje -->
+            
+        </form>
+
+    </section>
+
+
+</body>
+</html>
