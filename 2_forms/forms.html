@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formualarios</title>
+    <title>Formularios</title>
 
     <!-- Metatags (description - keywords) -  mejora la indexacion del contenido en Google SEO -->
 
@@ -23,13 +23,14 @@
         </div>
 
         <!-- <form action="mailto:tumail@gmail.com" method="post"> -->
-        <form action="respuesta.html">
+        <form id="formData" action="respuesta.html">
            
-            <div>
-                <label>
-                    <span>
+            <div class="textlabel">
+                <label >
+                    <span >
                         Nombre
                     </span> 
+                    
                     <input type="text" name="nombre" required>
                 </label>
             </div>
@@ -49,10 +50,12 @@
                     <input type="radio" name="genero" value="f" >
                     <span>Femenino</span>
                 </label>
+                <br>
                 <label>
                     <input type="radio" name="genero" value="m" >
                     <span>Masculino</span>
                 </label>
+                <br>
                 <label>
                     <input type="radio" name="genero" value="false" >
                     <span>Prefiero no decirlo</span>

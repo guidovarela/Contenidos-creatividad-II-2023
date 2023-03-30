@@ -1,5 +1,76 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* Fuentes locales */
+@font-face {
+    font-family: 'chunkfive-p' ;
+    src: url('../fonts/ChunkFive-Print.otf');
+}
+
+@font-face {
+    font-family: 'ChunkFive-regular';
+    src: url('../fonts/ChunkFive-Regular.otf');
+}
 
 html{
     font-family: 'Montserrat';
+    box-sizing:border-box;
 }
+
+#header h1{
+    font-family: 'chunkfive-p';
+}
+
+#form1{
+    width:70%;
+    margin: 0 auto;
+}
+
+#formData{
+    width:80%;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+#formData input{
+    width:100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid grey;
+    box-sizing:border-box;
+}
+#formData input[type='radio']{
+    width: auto;
+}
+
+#formData select{
+    width:100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:none
+}
+#formData textarea{
+    width:100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid grey;
+}
+#formData>div{
+    margin-bottom: 1.5em;
+}
+#formData input[type='submit']{
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+#formData input[type='submit']:hover{
+    background: rgb(64, 5, 5);
+    color: rgb(228, 117, 97);
+    cursor: pointer;
+}
+
+/* .textlabel{text-align: right;} */
