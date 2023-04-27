@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 16px ;
+	font-family: "Open Sans";
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+#contenedor{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+.primero{
+	background: rgb(207,0,15);
+	width: 30%;
+	padding: 1.5%;	
+}
+.segundo{
+	background: rgb(34,167,240);
+	width: 30%;
+	padding: 1.5%;
+}
+.tercero{
+	background: rgb(38,166,91);
+	width: 30%;
+	padding: 1.5%;
+}
+article img{width: 100%}
+
+
+/* Media Queries */
+
+/* Disp. Small -> max 600px */
+@media screen and (min-width:0px) and (max-width:600px){
+	body{
+		background: none;
+		font-size: 1.5rem;
+	}
+	#contenedor{
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}	
+	.primero,.segundo,.tercero{
+		width: 95%;
+		margin-bottom: 1em ;
+		padding: 0;
+		border-radius: 0.25em;
+		overflow: hidden;
+	}
+	.textos{
+		padding: 1.5em;
+	}
+}
+
+/* Disp. Medium -> max 990px */
+@media screen and (min-width:601px) and (max-width:990px) {
+	body{
+		background: tomato;
+		font-size: 1.25em;
+	}
+	#contenedor{
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.primero{
+		width: 100%;
+		margin-bottom: 20px;
+		/* height: 34h; */
+		}
+		.primero .img{
+			height: 34vh;
+			overflow-y: hidden;
+		}
+		.primero .img img{
+			position: relative;
+			top: -100px;
+		}
+	.segundo,.tercero{ width: 48%;}
+
+}
+
+
+
+/* Disp. Large -> max 1200px */
+@media screen and (min-width:991px) and (max-width:1200px){
+	body{
+			background: palegreen;
+		}
+	#contenedor{
+		width: 95%;
+		justify-content: space-between;
+	}
+}
+/* Disp. XLarge -> min 1201px */
+@media screen and (min-width:1201px){
+	body{
+			background: rgb(52, 24, 211);
+		}
+}
