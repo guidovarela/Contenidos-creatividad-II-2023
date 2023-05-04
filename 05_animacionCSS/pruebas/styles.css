@@ -1,0 +1,54 @@
+
+html{
+    font-family: 'Montserrat';
+}
+.quad{
+    width: 20%;
+    height: 20vh;
+    margin: 0 auto;
+}
+
+.quad2{
+    background: gold;
+    transition: all 0.5s ease 0s;
+}
+.quad2:hover{
+    transform: scale(1.5) rotate(1turn);
+    transform-origin: bottom right;
+    /* width: 40%;
+    height: 40vh; */
+    
+    transform-origin : 0 100% 0;
+    transform:  rotateX(360deg)
+
+}
+
+.quad1{
+    background: tomato;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+    /* transition-delay: 0s; */
+}
+.quad1:hover{
+    background: steelblue;
+    border-radius: 20px;
+}
+.quad1:active{
+    background: steelblue;
+    border-radius: 20px;
+}
+
+.image{
+    margin: 2em auto;
+    border: 1px solid black;
+    width: 60%;
+    overflow: hidden;
+}
+.image img{
+    transition: 0.5s;
+    width: 100%;
+        }
+        .image img:hover{
+            transform: scale(1.3) rotate(-5deg);
+        }
