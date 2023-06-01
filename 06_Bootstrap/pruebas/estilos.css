@@ -1,0 +1,15 @@
+*{margin: 0;padding:0}
+
+.bg1{background: tomato;}
+.bg2{background: rgb(9, 85, 156);}
+.bg3{background: rgb(219, 184, 10);}
+.bg4{background: rgb(2, 139, 20);}
+.bg5{background: rgb(105, 2, 139);}
+.bg6{background: rgb(81, 81, 81);}
+
+
+.header{
+    padding: 2em;
+    color: white;
+}
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- 
+        En Bootstrap, los prefijos de dispositivos son clave
+        SM / MD / LG / XL / XXL 
+
+     -->
+
+    <div class="container bg1">
+        Esto es un container responsive
+    </div>
+
+    <div class="container-fluid bg2">
+        esto es un contenedor eslastico (width:100%)
+    </div>
+
+    <div class="container-lg bg3">
+        Esto es un contenedor fluid hasta LG, y responsive a partir de XL
+    </div>
+
+
+    <header class="container-fluid bg4 header">
+        <div class="container">
+            <div class="logo text-lowercase">
+                LOGO
+            </div>
+        </div>
+    </header>
+
+    <!-- Grillas 
+    .row (flex-container)
+        .col (flex-items)
+        .col-nroCol
+        .col-breakpoint-nroCol
+    -->
+
+    <hr>
+
+    <section id="content1" class="container-fluid bg6">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-white">
+                        Esto es una columna
+                </div>
+                <div class="col bg-white">
+                        Esto es una columna
+                </div>
+                <div class="col bg-white">
+                        Esto es una columna
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+<section id="content2" class="container-fluid bg6">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="columnas bg-white">
+                        Esto es una columna
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="columnas bg-white">
+                        Esto es una columna
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="columnas bg-white">
+                        Esto es una columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<hr>
+
+    <section id="content3" class="container-fluid bg3">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="bg-white">
+                        Esto es una columna de 2 espacios
+                    </div>    
+                </div>
+                <div class="col-2">
+                    <div class="bg-white">
+                        Esto es una columna de 2 espacios
+                    </div>    
+                </div>
+                <div class="col-8">
+                    <div class="bg-white">
+                        Esto es una columna de 8 espacios
+                    </div>    
+                </div>
+                <div class="col-8">
+                    <div class="bg-white">
+                        Esto es una columna de 2 espacios
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

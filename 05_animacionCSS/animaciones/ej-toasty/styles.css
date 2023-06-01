@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 16px ;
+	font-family: "Open Sans";
+}
+
+body{
+	margin: 0;
+	padding: 0;
+    background: black;
+}
+.mk2{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    animation-name: showOpacity;
+    animation-duration: 3s;
+    /* https://cubic-bezier.com */
+    animation-timing-function: cubic-bezier(.8,.04,1,.32);
+    }
+    .juego img,.toasty img{
+        width: 100%;
+    }
+    .toasty{
+        width: 20%;
+        position: absolute;
+        bottom: -1px;
+        right: -200px;
+        animation-name: toasty-anim;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-timing-function: linear;
+    }
+
+
+@keyframes showOpacity {
+    0%{
+        /* opacity: 0; */
+        transform: translateY(-500px);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes toasty-anim {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-260px);
+    }
+    90%{
+        transform: translateX(-260px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

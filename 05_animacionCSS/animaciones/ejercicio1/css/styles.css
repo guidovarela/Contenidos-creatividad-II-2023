@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+html{
+    font-family: 'Montserrat';
+}
+body{
+    /* reset */
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing:border-box;
+}
+
+/* Flex Container - Padre */
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    align-content: space-between;
+    border: 2px gray solid;
+    height: 70vh; /* vh = viewport height*/
+}
+
+/* Flex Items */
+.item{
+    background: tomato;
+    padding: 20px;
+    border-radius: 15px;
+    /* content-box = width + padding-left + padding-right + border */
+    max-width: 23%;
+    /* height: 30%; */
+    order: 0;
+    
+    /* width: calc(50% - 30px); */
+
+}
+.container>.item:nth-child(8){
+    background: gold;
+    order: 1;
+}
+.container>.item:nth-child(3){
+    align-self: flex-start ;
+}
+
+.header{
+    display: flex;
+    padding: 10px 40px;
+    background: rgb(58, 58, 58);
+    color: white;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+    .title{
+        width: 10%;
+    }
+    .search{
+        
+    }
+    .navbar{
+        width: 20%;
+    }
+    .navbar>ul{
+        display: flex;
+        justify-content: space-between;
+    }

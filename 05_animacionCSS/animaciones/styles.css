@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 16px ;
+    font-family: 'Montserrat';
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.quad{
+    width: 20%;
+    height: 20vh;
+    
+}
+
+.quad1{
+    background: tomato;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: normal;
+}
+.quad1:hover{
+    animation-play-state: paused;
+    border-radius: 50%;
+}
+
+
+/* Animaciones */
+@keyframes anim1 {
+    /* incio */
+    0%{
+        transform: translateX(0);
+        background: gold;
+    }
+    
+    50%{
+        transform: translateX(300px);
+    }
+    /* fin */
+    100%{
+        transform: translateX(0);
+        background: rgb(42, 142, 35);
+    }
+}
