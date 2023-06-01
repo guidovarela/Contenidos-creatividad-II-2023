@@ -7,9 +7,19 @@
 .bg5{background: rgb(105, 2, 139);}
 .bg6{background: rgb(81, 81, 81);}
 
+/* #content3{
+    margin-top: 3em;
+} */
+
 
 .header{
     padding: 2em;
     color: white;
+}
+
+.pill2{
+    background: rgba(120, 5, 156, 0.68);
+    color: white;
+    text-align: center;
 }
 
